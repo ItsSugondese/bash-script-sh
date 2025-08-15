@@ -1,0 +1,9 @@
+sudo yum update -y
+
+# Install Go (if not already installed)
+sudo yum install -y golang
+
+# Set up Go environment (optional, if you want globally)
+echo 'export GOPATH=$HOME/go' >> ~/.bashrc
+echo 'export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin' >> ~/.bashrc
+source ~/.bashrc
